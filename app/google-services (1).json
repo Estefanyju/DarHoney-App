@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "220721398816",
+    "project_id": "darhoney-6e6de",
+    "storage_bucket": "darhoney-6e6de.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220721398816:android:85691ad9bffa6757226845",
+        "android_client_info": {
+          "package_name": "com.example.darhoney"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnXc5m4V7wIrCDrczkr-hmIxIXmv5OsXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

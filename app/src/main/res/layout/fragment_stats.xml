@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/honey_background">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_stats"
+            android:textAppearance="@style/TextAppearance.DarHoney.SectionTitle" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="16dp">
+
+                <TextView android:layout_columnWeight="1" android:text="Restaurantes visitados" android:textSize="13sp" />
+                <TextView android:id="@+id/tvTotalRestaurants" android:layout_columnWeight="1" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Total de visitas" android:textSize="13sp" />
+                <TextView android:id="@+id/tvTotalVisits" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Ciudad favorita" android:textSize="13sp" />
+                <TextView android:id="@+id/tvTopCity" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Tipo de comida favorito" android:textSize="13sp" />
+                <TextView android:id="@+id/tvFavoriteFood" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Mejor calificado" android:textSize="13sp" />
+                <TextView android:id="@+id/tvBestRated" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Más costoso" android:textSize="13sp" />
+                <TextView android:id="@+id/tvMostExpensive" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Más económico" android:textSize="13sp" />
+                <TextView android:id="@+id/tvCheapest" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Promedio por salida" android:textSize="13sp" />
+                <TextView android:id="@+id/tvAverageSpend" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Total gastado" android:textSize="13sp" />
+                <TextView android:id="@+id/tvTotalSpent" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Citas románticas" android:textSize="13sp" />
+                <TextView android:id="@+id/tvRomanticDates" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+                <TextView android:layout_columnWeight="1" android:layout_marginTop="8dp" android:text="Más visitado" android:textSize="13sp" />
+                <TextView android:id="@+id/tvMostVisited" android:layout_columnWeight="1" android:layout_marginTop="8dp" android:gravity="end" android:textStyle="bold" />
+
+            </GridLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/account_section"
+            android:textColor="@color/honey_on_surface"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSignOut"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_out"
+                    app:strokeColor="@color/honey_primary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnManagePassword"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/manage_password"
+                    app:strokeColor="@color/honey_primary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDeleteAccount"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/delete_account"
+                    android:textColor="@android:color/holo_red_dark"
+                    app:strokeColor="@android:color/holo_red_dark" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
